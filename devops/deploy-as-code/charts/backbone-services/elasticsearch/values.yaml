@@ -79,7 +79,7 @@ podAnnotations: {}
 # additionals labels
 labels: {}
 
-esJavaOpts: "-Xmx448m -Xms448m"
+esJavaOpts: "-Xmx1g -Xms1g"
 
 resources:
   requests:
