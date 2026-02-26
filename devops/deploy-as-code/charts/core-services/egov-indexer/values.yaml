@@ -61,6 +61,8 @@ env: |
     value: {{ index .Values "heap" | quote }} -Dcom.sun.net.ssl.checkRevocation=false -Dtrust_all_cert=true
   - name: SPRING_DATA_ELASTICSEARCH_CLIENT_REACTIVE_USE_SSL
     value: "true"
+  - name: EGOV_INDEXER_ES_HOST_PROTOCOL
+    value: "https"
   - name: SERVER_PORT
     value: "8080"
   - name: SECURITY_BASIC_ENABLED
