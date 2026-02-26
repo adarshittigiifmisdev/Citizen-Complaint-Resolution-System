@@ -83,9 +83,9 @@ esJavaOpts: "-Xmx448m -Xms448m"
 
 resources:
   requests:
-    memory: "2Gi" #It was earlier 896Mi, causing the elastic to crash and restart because of memory shortage
+    memory: "896Mi" #It was earlier 896Mi, causing the elastic to crash and restart because of memory shortage
   limits:
-    memory: "2Gi" #It was earlier 896Mi, causing the elastic to crash and restart because of memory shortage  
+    memory: "896Mi" #It was earlier 896Mi, causing the elastic to crash and restart because of memory shortage  
 
 initResources: {}
   # limits:
