@@ -37,7 +37,7 @@ ServiceMaps:
                 filter: "[?(@.code == $department)]"
                 filterMapping:
                   - variable: $department
-                    valueJsonpath: $.department
+                    valueJsonpath: $.additionalDetail.department
                 uriResponseMapping:
                   - inJsonPath: $.MdmsRes.common-masters.Department.*.name
                     outJsonPath: $.Data.department
