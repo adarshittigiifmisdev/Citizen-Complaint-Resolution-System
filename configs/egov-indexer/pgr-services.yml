@@ -6,7 +6,7 @@ ServiceMaps:
       configKey: INDEX
       indexes:
         - name: pgr-services
-          type: general
+          type: _doc
           id: $.service.serviceRequestId
           jsonPath: $
           timeStampField: $.service.auditDetails.lastModifiedTime
@@ -68,7 +68,7 @@ ServiceMaps:
       configKey: INDEX
       indexes:
         - name: pgr-services
-          type: general
+          type: _doc
           id: $.service.serviceRequestId
           jsonPath: $
           timeStampField: $.service.auditDetails.lastModifiedTime
@@ -108,7 +108,7 @@ ServiceMaps:
       configKey: LEGACYINDEX
       indexes:
         - name: pgr-services
-          type: general
+          type: _doc
           isBulk: true
           id: $.service.serviceRequestId
           jsonPath: $.PGREntities.*
