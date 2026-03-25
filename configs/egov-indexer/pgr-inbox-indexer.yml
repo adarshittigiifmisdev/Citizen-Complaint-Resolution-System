@@ -6,7 +6,7 @@ ServiceMaps:
       configKey: INDEX
       indexes:
         - name: inbox-pgr-services
-          type: general
+          type: _doc
           id: $.service.serviceRequestId
           jsonPath: $
           timeStampField: $.service.auditDetails.createdTime
@@ -26,7 +26,7 @@ ServiceMaps:
       configKey: INDEX
       indexes:
         - name: inbox-pgr-services
-          type: general
+          type: _doc
           id: $.service.serviceRequestId
           jsonPath: $
           timeStampField: $.service.auditDetails.createdTime
@@ -46,7 +46,7 @@ ServiceMaps:
       configKey: LEGACYINDEX
       indexes:
         - name: inbox-pgr-services-legacy
-          type: general
+          type: _doc
           isBulk: true
           id: $.service.serviceRequestId
           jsonPath: $.ServiceWrappers.*
