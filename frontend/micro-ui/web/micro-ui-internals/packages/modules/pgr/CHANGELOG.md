@@ -1,6 +1,22 @@
 # Changelog
 All notable changes to this module will be documented in this file.
 
+## [1.0.7] - 2026-03-10
+- CMS Create multiroot tenant city id Updaed
+
+## [1.0.6] - 2026-03-10
+- Digit-ui-libraries Updaed into 1.9.4
+
+## [1.0.5] - 2026-03-10
+### Updated
+- **Libraries Package**: Updated digit-ui-libraries to version 1.9.4
+
+### Version 1.0.4
+- **Fixed**: Clear search button in PGR inbox now clears both text fields and search results in a single click
+  - Updated `minReqFields` from 1 to 0 in PGRSearchInboxConfig.js to allow search with empty criteria
+  - Previously required two clicks: one to clear fields, another to refresh results
+  - Now automatically triggers search with cleared criteria on first click
+
 ## [1.0.3] - 2026-03-05
 ### Fixed
 - **PGR Inbox Search and Filter Issues**
